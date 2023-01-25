@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{b0ab574f-6c9b-45ac-8541-eb7a6cf78710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\app">
+      <UniqueIdentifier>{5e409e61-277b-4365-9f1d-d47d27715c0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ini">
+      <UniqueIdentifier>{d03e1247-aa31-4585-a526-a307d9034a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\gui">
+      <UniqueIdentifier>{af6b5ade-1ce8-44a3-a470-8cfff9155c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\gfx">
+      <UniqueIdentifier>{79e1d47e-7db7-4d7d-833b-5293408c9154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\sys">
+      <UniqueIdentifier>{f092c34a-7046-40bc-95ec-0fd56d0a4bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext">
+      <UniqueIdentifier>{d5cdd6a9-e82c-4e33-90c5-fd518afa4c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lock">
+      <UniqueIdentifier>{9f43f9a6-b596-4551-bad9-8adfed370dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lang">
+      <UniqueIdentifier>{af6c8986-d97f-4a18-9d8d-dcec53d2f1b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\dlg">
+      <UniqueIdentifier>{cebaa7c3-d5b7-4fb0-8645-a961fe89aecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ren">
+      <UniqueIdentifier>{e2dcff04-b762-4c36-aa00-3d18aabd57e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\log">
+      <UniqueIdentifier>{5c32ca59-c867-4eef-9995-8c25756471a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lock\ui">
+      <UniqueIdentifier>{f985d30e-634d-46bb-a136-0f3526465748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lock\hook">
+      <UniqueIdentifier>{8178daa6-47f7-4068-81f2-67c0b32eb3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lock\taskbar">
+      <UniqueIdentifier>{5d0ded86-c0c9-4d9c-bbe4-0db2d147f49f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\app\event">
+      <UniqueIdentifier>{15d6e41d-cc00-4fc6-9be5-292f063d531c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\app\animation">
+      <UniqueIdentifier>{52563e0b-5484-4dc2-ab24-2ac6e2532bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lock\apps">
+      <UniqueIdentifier>{539c6ff4-b9d5-40bf-a5d8-2f3f0e353ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lock\config">
+      <UniqueIdentifier>{81947217-3c0a-45cf-bc38-7946569e39a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\lock\uia">
+      <UniqueIdentifier>{2ebe2550-460a-436b-b2ad-f1e22635f81f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\app\guard">
+      <UniqueIdentifier>{233ede14-f8f6-46ff-9c4a-a222faf0dc03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\agg-2.4">
+      <UniqueIdentifier>{fc081863-fca5-42e5-87e2-84b022e26f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\interception">
+      <UniqueIdentifier>{e57fcafa-eac7-4f08-b57b-be9264923591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\lodepng">
+      <UniqueIdentifier>{5d1afe67-2869-4733-8bc9-489a35a28b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\simpleini">
+      <UniqueIdentifier>{98089e10-bf19-49ef-a14f-0620e644be9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\app">
+      <UniqueIdentifier>{ff0a5247-08f3-45ea-9cb5-d5cc5f796644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\app\animation">
+      <UniqueIdentifier>{e571421c-257a-4f2b-8586-e6f3d90f37c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\app\event">
+      <UniqueIdentifier>{0907b47b-7f26-44c9-b65c-e2d20d545937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\app\guard">
+      <UniqueIdentifier>{add5862e-ae8b-4935-989e-90a0133a50e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\dlg">
+      <UniqueIdentifier>{1efed666-3ca8-4b28-9455-d4827c9f2a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx">
+      <UniqueIdentifier>{62986ed6-391e-4ae4-9740-cccc0612976c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui">
+      <UniqueIdentifier>{98197b69-a758-4f28-a9a9-ff58f466e219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\handler">
+      <UniqueIdentifier>{1dcdd99e-aa1f-4311-beca-fb26fefb5c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ini">
+      <UniqueIdentifier>{4a7f97eb-f131-4379-baa4-1cc38185e4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lang">
+      <UniqueIdentifier>{56f1b01f-8690-45dc-8784-e8bb89b11f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lock">
+      <UniqueIdentifier>{91c127ae-2863-4abb-a65d-442b3ea40a7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lock\apps">
+      <UniqueIdentifier>{32e959fb-7cba-4386-81ce-519607f2c37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lock\config">
+      <UniqueIdentifier>{c63a12ea-de19-4def-abd7-9a4b0feef9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lock\hook">
+      <UniqueIdentifier>{4f9251f8-4b19-4c75-b96f-5d508895c8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lock\ui">
+      <UniqueIdentifier>{aa5f8fdc-5fd0-490c-ac47-3be64a732bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lock\taskbar">
+      <UniqueIdentifier>{a66b7863-8735-41b8-8ae2-88fbd1514fec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lock\uia">
+      <UniqueIdentifier>{0060eb48-947d-41d0-ad06-ed2fa9a02935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\log">
+      <UniqueIdentifier>{4751cd5c-36c0-4fa2-b070-d60b84bd91d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ren">
+      <UniqueIdentifier>{a3f0b235-5f14-4b97-a53e-3915d1fca948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\res">
+      <UniqueIdentifier>{70d8b1a6-8b64-4b78-8a09-36c19cc8f847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sys">
+      <UniqueIdentifier>{1d745510-d14b-4e3e-8efe-13baa016c73c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gui\Window.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\animation\AnimationFrameSet.h">
+      <Filter>Header Files\app\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\animation\AnimationHandler.h">
+      <Filter>Header Files\app\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\animation\FlyoutAnimation.h">
+      <Filter>Header Files\app\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\animation\TransitionEffects.h">
+      <Filter>Header Files\app\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\event\AppEvent.h">
+      <Filter>Header Files\app\event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\event\AppEventHandler.h">
+      <Filter>Header Files\app\event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\event\BaseEventHandler.h">
+      <Filter>Header Files\app\event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\guard\UnlockGuardModel.h">
+      <Filter>Header Files\app\guard</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\guard\UnlockGuardPainter.h">
+      <Filter>Header Files\app\guard</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\guard\UnlockGuardView.h">
+      <Filter>Header Files\app\guard</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\AppMessages.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\AppParameters.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutButtonOpacity.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutDialogs.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutLayers.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutModel.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutProgressBar.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutResources.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutState.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutView.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\FlyoutWindow.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\HotkeyHandler.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\LockState.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\NotificationArea.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\PanelComponent.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\Sounds.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\StringConverter.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\User32.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\Version.h">
+      <Filter>Header Files\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\AboutDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\LicenseDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\PageAdvancedDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\PageGeneralDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\PageLanguageDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\PinDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\PropertiesDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dlg\SettingsDlg.h">
+      <Filter>Header Files\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gfx\AggAll.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gfx\Bitmap.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gfx\BitmapContext.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gfx\BitmapUtils.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gfx\Color.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gfx\FrameSet.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\ControlAccessor.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\Dialog.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\LayeredWindow.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\Tooltip.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\Window.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\WindowUtils.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\handler\CommandHandler.h">
+      <Filter>Header Files\gui\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\handler\MessageHandler.h">
+      <Filter>Header Files\gui\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\handler\NotifyHandler.h">
+      <Filter>Header Files\gui\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ini\ApplicationRecord.h">
+      <Filter>Header Files\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ini\BaseApplicationRecord.h">
+      <Filter>Header Files\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ini\Property.h">
+      <Filter>Header Files\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ini\SettingsData.h">
+      <Filter>Header Files\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ini\SettingsParser.h">
+      <Filter>Header Files\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lang\LanguageList.h">
+      <Filter>Header Files\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lang\Languages.h">
+      <Filter>Header Files\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lang\Messages.h">
+      <Filter>Header Files\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\apps\ApplicationFrameHostCfg.h">
+      <Filter>Header Files\lock\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\apps\ExplorerCfg.h">
+      <Filter>Header Files\lock\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\apps\LiteLockrCfg.h">
+      <Filter>Header Files\lock\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\apps\ShellExperienceHostCfg.h">
+      <Filter>Header Files\lock\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\config\AppCfg.h">
+      <Filter>Header Files\lock\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\config\AppConfigSet.h">
+      <Filter>Header Files\lock\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\hook\AbstractHook.h">
+      <Filter>Header Files\lock\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\hook\EventInterception.h">
+      <Filter>Header Files\lock\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\hook\HookFactory.h">
+      <Filter>Header Files\lock\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\hook\InterceptionHook.h">
+      <Filter>Header Files\lock\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\hook\LockStateChecker.h">
+      <Filter>Header Files\lock\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\hook\LowLevelWindowsHook.h">
+      <Filter>Header Files\lock\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\hook\NullHook.h">
+      <Filter>Header Files\lock\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\taskbar\TaskbarButtonDetector.h">
+      <Filter>Header Files\lock\taskbar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\taskbar\TaskbarButtonEnumeration.h">
+      <Filter>Header Files\lock\taskbar</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\ui\AppSelection.h">
+      <Filter>Header Files\lock\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\ui\ButtonPreview.h">
+      <Filter>Header Files\lock\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\ui\FrameSetWnd.h">
+      <Filter>Header Files\lock\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\ui\LockPreviewWnd.h">
+      <Filter>Header Files\lock\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\ui\PreviewStyle.h">
+      <Filter>Header Files\lock\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\uia\UIAutomationHelper.h">
+      <Filter>Header Files\lock\uia</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\uia\UIAutomationHelperImpl.h">
+      <Filter>Header Files\lock\uia</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\uia\UIAutomationHelperTypes.h">
+      <Filter>Header Files\lock\uia</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\DblClickRecognizer.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\DisplayMonitors.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\ExpiringCache.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\HookData.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\HookOptions.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\HookThread.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\InputLocker.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\KeyboardFilter.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\KeyStroke.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\LockArea.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\LockAreaMap.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\LockAreaMapBuffer.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\ModifierKeys.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\MouseFilter.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\MousePositionValidator.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\MouseStroke.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\WindowValidator.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\WinEventThread.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lock\WorkerThread.h">
+      <Filter>Header Files\lock</Filter>
+    </ClInclude>
+    <ClInclude Include="src\log\Logger.h">
+      <Filter>Header Files\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\Camera.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\DataType.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\Geometry.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\Material.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\MeshObject.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\PlanesGeometry.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\Polygon.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ren\Renderer.h">
+      <Filter>Header Files\ren</Filter>
+    </ClInclude>
+    <ClInclude Include="src\res\AppVersion.h">
+      <Filter>Header Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="src\res\Resources.h">
+      <Filter>Header Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\AppClock.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\AppTimer.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\BaseEvent.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\BinaryResource.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\Comparison.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\Executable.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\KeyFrames.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\MiniDump.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\Process.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\Rectangle.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\StringUtils.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sys\Time.h">
+      <Filter>Header Files\sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\app\HotkeyHandler.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Main.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\FlyoutModel.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\FlyoutView.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\FlyoutWindow.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\Bitmap.cpp">
+      <Filter>Source Files\src\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\BitmapContext.cpp">
+      <Filter>Source Files\src\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\BitmapUtils.cpp">
+      <Filter>Source Files\src\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\Window.cpp">
+      <Filter>Source Files\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\Dialog.cpp">
+      <Filter>Source Files\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\LayeredWindow.cpp">
+      <Filter>Source Files\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\Window.cpp">
+      <Filter>Source Files\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\AppTimer.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\BaseEvent.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\Rectangle.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\User32.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\AppParameters.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\InputLocker.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\MousePositionValidator.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\WindowValidator.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ini\SettingsData.cpp">
+      <Filter>Source Files\src\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\HookThread.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\WorkerThread.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\StringUtils.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\Process.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\WindowUtils.cpp">
+      <Filter>Source Files\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\WinEventThread.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lang\Messages.cpp">
+      <Filter>Source Files\src\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lang\Languages.cpp">
+      <Filter>Source Files\src\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\AboutDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\PageAdvancedDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\PageGeneralDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\PageLanguageDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\SettingsDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\PinDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\StringConverter.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Sounds.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ren\Geometry.cpp">
+      <Filter>Source Files\src\ren</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ren\Material.cpp">
+      <Filter>Source Files\src\ren</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ren\MeshObject.cpp">
+      <Filter>Source Files\src\ren</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ren\Polygon.cpp">
+      <Filter>Source Files\src\ren</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ren\Renderer.cpp">
+      <Filter>Source Files\src\ren</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ren\PlanesGeometry.cpp">
+      <Filter>Source Files\src\ren</Filter>
+    </ClCompile>
+    <ClCompile Include="src\log\Logger.cpp">
+      <Filter>Source Files\src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\PropertiesDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ini\ApplicationRecord.cpp">
+      <Filter>Source Files\src\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\LockAreaMap.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\LockArea.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\LockAreaMapBuffer.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\DblClickRecognizer.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\ModifierKeys.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\KeyboardFilter.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\MouseFilter.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\HookData.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\HookOptions.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ini\SettingsParser.cpp">
+      <Filter>Source Files\src\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ini\Property.cpp">
+      <Filter>Source Files\src\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\ui\ButtonPreview.cpp">
+      <Filter>Source Files\src\lock\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\ui\FrameSetWnd.cpp">
+      <Filter>Source Files\src\lock\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\ui\AppSelection.cpp">
+      <Filter>Source Files\src\lock\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\ui\LockPreviewWnd.cpp">
+      <Filter>Source Files\src\lock\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ini\BaseApplicationRecord.cpp">
+      <Filter>Source Files\src\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\NotificationArea.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\Tooltip.cpp">
+      <Filter>Source Files\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\PanelComponent.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\FrameSet.cpp">
+      <Filter>Source Files\src\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\BinaryResource.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\MiniDump.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dlg\LicenseDlg.cpp">
+      <Filter>Source Files\src\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\hook\AbstractHook.cpp">
+      <Filter>Source Files\src\lock\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\hook\HookFactory.cpp">
+      <Filter>Source Files\src\lock\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\hook\InterceptionHook.cpp">
+      <Filter>Source Files\src\lock\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\hook\LowLevelWindowsHook.cpp">
+      <Filter>Source Files\src\lock\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\KeyStroke.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\MouseStroke.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\ExpiringCache.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\DisplayMonitors.cpp">
+      <Filter>Source Files\src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\FlyoutButtonOpacity.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\FlyoutLayers.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\FlyoutProgressBar.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\FlyoutResources.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\LockState.cpp">
+      <Filter>Source Files\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\KeyFrames.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\AppClock.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\hook\NullHook.cpp">
+      <Filter>Source Files\src\lock\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ren\Camera.cpp">
+      <Filter>Source Files\src\ren</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\ControlAccessor.cpp">
+      <Filter>Source Files\src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\taskbar\TaskbarButtonDetector.cpp">
+      <Filter>Source Files\src\lock\taskbar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\taskbar\TaskbarButtonEnumeration.cpp">
+      <Filter>Source Files\src\lock\taskbar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\event\AppEvent.cpp">
+      <Filter>Source Files\src\app\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\event\AppEventHandler.cpp">
+      <Filter>Source Files\src\app\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\event\BaseEventHandler.cpp">
+      <Filter>Source Files\src\app\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\animation\AnimationFrameSet.cpp">
+      <Filter>Source Files\src\app\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\animation\AnimationHandler.cpp">
+      <Filter>Source Files\src\app\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\animation\FlyoutAnimation.cpp">
+      <Filter>Source Files\src\app\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\animation\TransitionEffects.cpp">
+      <Filter>Source Files\src\app\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\apps\ApplicationFrameHostCfg.cpp">
+      <Filter>Source Files\src\lock\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\apps\ExplorerCfg.cpp">
+      <Filter>Source Files\src\lock\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\config\AppCfg.cpp">
+      <Filter>Source Files\src\lock\config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\config\AppConfigSet.cpp">
+      <Filter>Source Files\src\lock\config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\uia\UIAutomationHelper.cpp">
+      <Filter>Source Files\src\lock\uia</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\uia\UIAutomationHelperImpl.cpp">
+      <Filter>Source Files\src\lock\uia</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\apps\ShellExperienceHostCfg.cpp">
+      <Filter>Source Files\src\lock\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\Executable.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\apps\LiteLockrCfg.cpp">
+      <Filter>Source Files\src\lock\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lock\hook\LockStateChecker.cpp">
+      <Filter>Source Files\src\lock\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\Time.cpp">
+      <Filter>Source Files\src\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\guard\UnlockGuardModel.cpp">
+      <Filter>Source Files\src\app\guard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\guard\UnlockGuardPainter.cpp">
+      <Filter>Source Files\src\app\guard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\guard\UnlockGuardView.cpp">
+      <Filter>Source Files\src\app\guard</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_arc.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_arrowhead.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_bezier_arc.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_bspline.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_color_rgba.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_curves.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_embedded_raster_fonts.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_font_win32_tt.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_gsv_text.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_image_filters.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_line_aa_basics.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_line_profile_aa.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_rounded_rect.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_sqrt_tables.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_affine.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_double_path.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_single_path.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_warp_magnifier.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_bspline.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_contour.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_dash.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_markers_term.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_smooth_poly1.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_stroke.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vpgen_clip_polygon.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vpgen_clip_polyline.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\agg-2.4\src\agg_vpgen_segmentator.cpp">
+      <Filter>Source Files\ext\agg-2.4</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\interception\interception.c">
+      <Filter>Source Files\ext\interception</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\lodepng\lodepng.cpp">
+      <Filter>Source Files\ext\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\simpleini\ConvertUTF.c">
+      <Filter>Source Files\ext\simpleini</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\res\Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\res\app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\app16.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\app64.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\app96.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\About.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\Body.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\Center.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\Close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\Hamburger.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\Help.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\KeyboardDisabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\KeyboardEnabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\MouseDisabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\MouseEnabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\RingBackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\RingOut.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\RingProgress.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\Settings.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\Title.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\InfoMode.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\LockedArea.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\ErrorMark.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\LockCancel.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\LockClosed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\LockDisabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\LockOpen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\ShadowMask.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\ShadowFar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\ShadowNear.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\TabLockClosed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\TabLockOpen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\png\TabLockDisabled.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\StartApp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\CannotUnlock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\FinishLocking.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\StartLocking.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\Unlock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\TabLock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\TabUnlock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\OpenOptions.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\res\eff\CloseOptions.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="src\res\snd\StartLocking.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="src\res\snd\FinishLocking.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="src\res\snd\Unlock.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="src\res\snd\Cancel.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="src\res\snd\Nodding.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="src\res\snd\Wrong.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

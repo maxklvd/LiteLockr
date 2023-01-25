@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07B3F6B1-A18C-4261-80E0-3EF7658A28F0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LiteLockr</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>LiteLockr</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <BoostRootDir>C:\boost_1_81_0</BoostRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(BoostRootDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(BoostRootDir)\stage\lib;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>LiteLockr</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(BoostRootDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(BoostRootDir)\stage\lib;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>LiteLockr</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0A00;BZ_NO_STDIO;INTERCEPTION_STATIC;_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>ext;ext/agg-2.4/include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;dxguid.lib;psapi.lib;version.lib;winmm.lib;Msimg32.lib;comsuppw.lib;strmiids.lib;ddraw.lib;Dwmapi.lib;Gdiplus.lib;Dbghelp.lib;Wtsapi32.lib;UxTheme.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0A00;BZ_NO_STDIO;INTERCEPTION_STATIC;_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>ext;ext/agg-2.4/include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAsManaged>false</CompileAsManaged>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OpenMPSupport>true</OpenMPSupport>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;dxguid.lib;psapi.lib;version.lib;winmm.lib;Msimg32.lib;comsuppw.lib;strmiids.lib;ddraw.lib;Dwmapi.lib;Gdiplus.lib;Dbghelp.lib;Wtsapi32.lib;UxTheme.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ext\agg-2.4\src\agg_arc.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_arrowhead.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_bezier_arc.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_bspline.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_color_rgba.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_curves.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_embedded_raster_fonts.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_font_win32_tt.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_gsv_text.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_image_filters.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_line_aa_basics.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_line_profile_aa.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_rounded_rect.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_sqrt_tables.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_affine.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_double_path.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_single_path.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_trans_warp_magnifier.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_bspline.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_contour.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_dash.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_markers_term.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_smooth_poly1.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vcgen_stroke.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vpgen_clip_polygon.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vpgen_clip_polyline.cpp" />
+    <ClCompile Include="ext\agg-2.4\src\agg_vpgen_segmentator.cpp" />
+    <ClCompile Include="ext\interception\interception.c" />
+    <ClCompile Include="ext\lodepng\lodepng.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level2</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level2</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="ext\simpleini\ConvertUTF.c" />
+    <ClCompile Include="src\app\animation\AnimationFrameSet.cpp" />
+    <ClCompile Include="src\app\animation\AnimationHandler.cpp" />
+    <ClCompile Include="src\app\animation\FlyoutAnimation.cpp" />
+    <ClCompile Include="src\app\animation\TransitionEffects.cpp" />
+    <ClCompile Include="src\app\AppParameters.cpp" />
+    <ClCompile Include="src\app\event\AppEvent.cpp" />
+    <ClCompile Include="src\app\event\AppEventHandler.cpp" />
+    <ClCompile Include="src\app\event\BaseEventHandler.cpp" />
+    <ClCompile Include="src\app\FlyoutButtonOpacity.cpp" />
+    <ClCompile Include="src\app\FlyoutLayers.cpp" />
+    <ClCompile Include="src\app\FlyoutProgressBar.cpp" />
+    <ClCompile Include="src\app\FlyoutResources.cpp" />
+    <ClCompile Include="src\app\guard\UnlockGuardModel.cpp" />
+    <ClCompile Include="src\app\guard\UnlockGuardPainter.cpp" />
+    <ClCompile Include="src\app\guard\UnlockGuardView.cpp" />
+    <ClCompile Include="src\app\HotkeyHandler.cpp" />
+    <ClCompile Include="src\app\LockState.cpp" />
+    <ClCompile Include="src\app\Main.cpp" />
+    <ClCompile Include="src\app\PanelComponent.cpp" />
+    <ClCompile Include="src\app\FlyoutModel.cpp" />
+    <ClCompile Include="src\app\FlyoutView.cpp" />
+    <ClCompile Include="src\app\FlyoutWindow.cpp" />
+    <ClCompile Include="src\app\Sounds.cpp" />
+    <ClCompile Include="src\app\StringConverter.cpp" />
+    <ClCompile Include="src\app\NotificationArea.cpp" />
+    <ClCompile Include="src\app\User32.cpp" />
+    <ClCompile Include="src\dlg\AboutDlg.cpp" />
+    <ClCompile Include="src\dlg\LicenseDlg.cpp" />
+    <ClCompile Include="src\dlg\PageAdvancedDlg.cpp" />
+    <ClCompile Include="src\dlg\PageGeneralDlg.cpp" />
+    <ClCompile Include="src\dlg\PageLanguageDlg.cpp" />
+    <ClCompile Include="src\dlg\PinDlg.cpp" />
+    <ClCompile Include="src\dlg\PropertiesDlg.cpp" />
+    <ClCompile Include="src\dlg\SettingsDlg.cpp" />
+    <ClCompile Include="src\gfx\Bitmap.cpp" />
+    <ClCompile Include="src\gfx\BitmapContext.cpp" />
+    <ClCompile Include="src\gfx\FrameSet.cpp" />
+    <ClCompile Include="src\gfx\BitmapUtils.cpp" />
+    <ClCompile Include="src\gui\ControlAccessor.cpp" />
+    <ClCompile Include="src\gui\Window.cpp" />
+    <ClCompile Include="src\gui\Dialog.cpp" />
+    <ClCompile Include="src\gui\LayeredWindow.cpp" />
+    <ClCompile Include="src\gui\Tooltip.cpp" />
+    <ClCompile Include="src\gui\WindowUtils.cpp" />
+    <ClCompile Include="src\ini\ApplicationRecord.cpp" />
+    <ClCompile Include="src\ini\BaseApplicationRecord.cpp" />
+    <ClCompile Include="src\ini\Property.cpp" />
+    <ClCompile Include="src\ini\SettingsData.cpp" />
+    <ClCompile Include="src\ini\SettingsParser.cpp" />
+    <ClCompile Include="src\lock\apps\ApplicationFrameHostCfg.cpp" />
+    <ClCompile Include="src\lock\apps\ExplorerCfg.cpp" />
+    <ClCompile Include="src\lock\apps\LiteLockrCfg.cpp" />
+    <ClCompile Include="src\lock\apps\ShellExperienceHostCfg.cpp" />
+    <ClCompile Include="src\lock\config\AppCfg.cpp" />
+    <ClCompile Include="src\lock\config\AppConfigSet.cpp" />
+    <ClCompile Include="src\lock\DisplayMonitors.cpp" />
+    <ClCompile Include="src\lock\ExpiringCache.cpp" />
+    <ClCompile Include="src\lock\hook\AbstractHook.cpp" />
+    <ClCompile Include="src\lock\hook\HookFactory.cpp" />
+    <ClCompile Include="src\lock\hook\InterceptionHook.cpp" />
+    <ClCompile Include="src\lock\hook\LockStateChecker.cpp" />
+    <ClCompile Include="src\lock\hook\LowLevelWindowsHook.cpp" />
+    <ClCompile Include="src\lock\hook\NullHook.cpp" />
+    <ClCompile Include="src\lock\KeyStroke.cpp" />
+    <ClCompile Include="src\lock\MouseStroke.cpp" />
+    <ClCompile Include="src\lock\taskbar\TaskbarButtonDetector.cpp" />
+    <ClCompile Include="src\lock\taskbar\TaskbarButtonEnumeration.cpp" />
+    <ClCompile Include="src\lock\DblClickRecognizer.cpp" />
+    <ClCompile Include="src\lock\HookData.cpp" />
+    <ClCompile Include="src\lock\HookOptions.cpp" />
+    <ClCompile Include="src\lock\HookThread.cpp" />
+    <ClCompile Include="src\lock\uia\UIAutomationHelper.cpp" />
+    <ClCompile Include="src\lock\uia\UIAutomationHelperImpl.cpp" />
+    <ClCompile Include="src\lock\ui\AppSelection.cpp" />
+    <ClCompile Include="src\lock\ui\ButtonPreview.cpp" />
+    <ClCompile Include="src\lock\InputLocker.cpp" />
+    <ClCompile Include="src\lock\KeyboardFilter.cpp" />
+    <ClCompile Include="src\lock\LockArea.cpp" />
+    <ClCompile Include="src\lock\LockAreaMap.cpp" />
+    <ClCompile Include="src\lock\LockAreaMapBuffer.cpp" />
+    <ClCompile Include="src\lock\ModifierKeys.cpp" />
+    <ClCompile Include="src\lock\MouseFilter.cpp" />
+    <ClCompile Include="src\lock\MousePositionValidator.cpp" />
+    <ClCompile Include="src\lock\ui\LockPreviewWnd.cpp" />
+    <ClCompile Include="src\lock\ui\FrameSetWnd.cpp" />
+    <ClCompile Include="src\lock\WindowValidator.cpp" />
+    <ClCompile Include="src\lock\WinEventThread.cpp" />
+    <ClCompile Include="src\lock\WorkerThread.cpp" />
+    <ClCompile Include="src\lang\Languages.cpp" />
+    <ClCompile Include="src\lang\Messages.cpp" />
+    <ClCompile Include="src\log\Logger.cpp" />
+    <ClCompile Include="src\ren\Camera.cpp" />
+    <ClCompile Include="src\ren\Geometry.cpp" />
+    <ClCompile Include="src\ren\Material.cpp" />
+    <ClCompile Include="src\ren\MeshObject.cpp" />
+    <ClCompile Include="src\ren\Polygon.cpp" />
+    <ClCompile Include="src\ren\Renderer.cpp" />
+    <ClCompile Include="src\ren\PlanesGeometry.cpp" />
+    <ClCompile Include="src\sys\AppClock.cpp" />
+    <ClCompile Include="src\sys\AppTimer.cpp" />
+    <ClCompile Include="src\sys\BaseEvent.cpp" />
+    <ClCompile Include="src\sys\BinaryResource.cpp" />
+    <ClCompile Include="src\sys\Executable.cpp" />
+    <ClCompile Include="src\sys\KeyFrames.cpp" />
+    <ClCompile Include="src\sys\MiniDump.cpp" />
+    <ClCompile Include="src\sys\Process.cpp" />
+    <ClCompile Include="src\sys\Rectangle.cpp" />
+    <ClCompile Include="src\sys\StringUtils.cpp" />
+    <ClCompile Include="src\sys\Time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\res\Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\res\app.ico" />
+    <Image Include="src\res\app16.ico" />
+    <Image Include="src\res\app64.ico" />
+    <Image Include="src\res\app96.ico" />
+    <Image Include="src\res\eff\CannotUnlock.png" />
+    <Image Include="src\res\eff\CloseOptions.png" />
+    <Image Include="src\res\eff\FinishLocking.png" />
+    <Image Include="src\res\eff\OpenOptions.png" />
+    <Image Include="src\res\eff\StartApp.png" />
+    <Image Include="src\res\eff\StartLocking.png" />
+    <Image Include="src\res\eff\TabLock.png" />
+    <Image Include="src\res\eff\TabUnlock.png" />
+    <Image Include="src\res\eff\Unlock.png" />
+    <Image Include="src\res\png\About.png" />
+    <Image Include="src\res\png\Body.png" />
+    <Image Include="src\res\png\Center.png" />
+    <Image Include="src\res\png\Close.png" />
+    <Image Include="src\res\png\ErrorMark.png" />
+    <Image Include="src\res\png\Hamburger.png" />
+    <Image Include="src\res\png\Help.png" />
+    <Image Include="src\res\png\InfoMode.png" />
+    <Image Include="src\res\png\KeyboardDisabled.png" />
+    <Image Include="src\res\png\KeyboardEnabled.png" />
+    <Image Include="src\res\png\LockCancel.png" />
+    <Image Include="src\res\png\LockClosed.png" />
+    <Image Include="src\res\png\LockDisabled.png" />
+    <Image Include="src\res\png\LockedArea.png" />
+    <Image Include="src\res\png\LockOpen.png" />
+    <Image Include="src\res\png\MouseDisabled.png" />
+    <Image Include="src\res\png\MouseEnabled.png" />
+    <Image Include="src\res\png\RingBackground.png" />
+    <Image Include="src\res\png\RingOut.png" />
+    <Image Include="src\res\png\RingProgress.png" />
+    <Image Include="src\res\png\Settings.png" />
+    <Image Include="src\res\png\ShadowFar.png" />
+    <Image Include="src\res\png\ShadowMask.png" />
+    <Image Include="src\res\png\ShadowNear.png" />
+    <Image Include="src\res\png\TabLockClosed.png" />
+    <Image Include="src\res\png\TabLockDisabled.png" />
+    <Image Include="src\res\png\TabLockOpen.png" />
+    <Image Include="src\res\png\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="src\res\snd\Cancel.wav" />
+    <Media Include="src\res\snd\FinishLocking.wav" />
+    <Media Include="src\res\snd\Nodding.wav" />
+    <Media Include="src\res\snd\StartLocking.wav" />
+    <Media Include="src\res\snd\Unlock.wav" />
+    <Media Include="src\res\snd\Wrong.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\app\animation\AnimationFrameSet.h" />
+    <ClInclude Include="src\app\animation\AnimationHandler.h" />
+    <ClInclude Include="src\app\animation\FlyoutAnimation.h" />
+    <ClInclude Include="src\app\animation\TransitionEffects.h" />
+    <ClInclude Include="src\app\AppMessages.h" />
+    <ClInclude Include="src\app\AppParameters.h" />
+    <ClInclude Include="src\app\event\AppEvent.h" />
+    <ClInclude Include="src\app\event\AppEventHandler.h" />
+    <ClInclude Include="src\app\event\BaseEventHandler.h" />
+    <ClInclude Include="src\app\FlyoutButtonOpacity.h" />
+    <ClInclude Include="src\app\FlyoutDialogs.h" />
+    <ClInclude Include="src\app\FlyoutLayers.h" />
+    <ClInclude Include="src\app\FlyoutModel.h" />
+    <ClInclude Include="src\app\FlyoutProgressBar.h" />
+    <ClInclude Include="src\app\FlyoutResources.h" />
+    <ClInclude Include="src\app\FlyoutState.h" />
+    <ClInclude Include="src\app\FlyoutView.h" />
+    <ClInclude Include="src\app\FlyoutWindow.h" />
+    <ClInclude Include="src\app\guard\UnlockGuardModel.h" />
+    <ClInclude Include="src\app\guard\UnlockGuardPainter.h" />
+    <ClInclude Include="src\app\guard\UnlockGuardView.h" />
+    <ClInclude Include="src\app\HotkeyHandler.h" />
+    <ClInclude Include="src\app\LockState.h" />
+    <ClInclude Include="src\app\NotificationArea.h" />
+    <ClInclude Include="src\app\PanelComponent.h" />
+    <ClInclude Include="src\app\Sounds.h" />
+    <ClInclude Include="src\app\StringConverter.h" />
+    <ClInclude Include="src\app\User32.h" />
+    <ClInclude Include="src\app\Version.h" />
+    <ClInclude Include="src\dlg\AboutDlg.h" />
+    <ClInclude Include="src\dlg\LicenseDlg.h" />
+    <ClInclude Include="src\dlg\PageAdvancedDlg.h" />
+    <ClInclude Include="src\dlg\PageGeneralDlg.h" />
+    <ClInclude Include="src\dlg\PageLanguageDlg.h" />
+    <ClInclude Include="src\dlg\PinDlg.h" />
+    <ClInclude Include="src\dlg\PropertiesDlg.h" />
+    <ClInclude Include="src\dlg\SettingsDlg.h" />
+    <ClInclude Include="src\gfx\AggAll.h" />
+    <ClInclude Include="src\gfx\Bitmap.h" />
+    <ClInclude Include="src\gfx\BitmapContext.h" />
+    <ClInclude Include="src\gfx\BitmapUtils.h" />
+    <ClInclude Include="src\gfx\Color.h" />
+    <ClInclude Include="src\gfx\FrameSet.h" />
+    <ClInclude Include="src\gui\ControlAccessor.h" />
+    <ClInclude Include="src\gui\Dialog.h" />
+    <ClInclude Include="src\gui\handler\CommandHandler.h" />
+    <ClInclude Include="src\gui\handler\MessageHandler.h" />
+    <ClInclude Include="src\gui\handler\NotifyHandler.h" />
+    <ClInclude Include="src\gui\LayeredWindow.h" />
+    <ClInclude Include="src\gui\Tooltip.h" />
+    <ClInclude Include="src\gui\Window.h" />
+    <ClInclude Include="src\gui\WindowUtils.h" />
+    <ClInclude Include="src\ini\ApplicationRecord.h" />
+    <ClInclude Include="src\ini\BaseApplicationRecord.h" />
+    <ClInclude Include="src\ini\Property.h" />
+    <ClInclude Include="src\ini\SettingsData.h" />
+    <ClInclude Include="src\ini\SettingsParser.h" />
+    <ClInclude Include="src\lang\LanguageList.h" />
+    <ClInclude Include="src\lang\Languages.h" />
+    <ClInclude Include="src\lang\Messages.h" />
+    <ClInclude Include="src\lock\apps\ApplicationFrameHostCfg.h" />
+    <ClInclude Include="src\lock\apps\ExplorerCfg.h" />
+    <ClInclude Include="src\lock\apps\LiteLockrCfg.h" />
+    <ClInclude Include="src\lock\apps\ShellExperienceHostCfg.h" />
+    <ClInclude Include="src\lock\config\AppCfg.h" />
+    <ClInclude Include="src\lock\config\AppConfigSet.h" />
+    <ClInclude Include="src\lock\DblClickRecognizer.h" />
+    <ClInclude Include="src\lock\DisplayMonitors.h" />
+    <ClInclude Include="src\lock\ExpiringCache.h" />
+    <ClInclude Include="src\lock\HookData.h" />
+    <ClInclude Include="src\lock\HookOptions.h" />
+    <ClInclude Include="src\lock\HookThread.h" />
+    <ClInclude Include="src\lock\hook\AbstractHook.h" />
+    <ClInclude Include="src\lock\hook\EventInterception.h" />
+    <ClInclude Include="src\lock\hook\HookFactory.h" />
+    <ClInclude Include="src\lock\hook\InterceptionHook.h" />
+    <ClInclude Include="src\lock\hook\LockStateChecker.h" />
+    <ClInclude Include="src\lock\hook\LowLevelWindowsHook.h" />
+    <ClInclude Include="src\lock\hook\NullHook.h" />
+    <ClInclude Include="src\lock\InputLocker.h" />
+    <ClInclude Include="src\lock\KeyboardFilter.h" />
+    <ClInclude Include="src\lock\KeyStroke.h" />
+    <ClInclude Include="src\lock\LockArea.h" />
+    <ClInclude Include="src\lock\LockAreaMap.h" />
+    <ClInclude Include="src\lock\LockAreaMapBuffer.h" />
+    <ClInclude Include="src\lock\ModifierKeys.h" />
+    <ClInclude Include="src\lock\MouseFilter.h" />
+    <ClInclude Include="src\lock\MousePositionValidator.h" />
+    <ClInclude Include="src\lock\MouseStroke.h" />
+    <ClInclude Include="src\lock\taskbar\TaskbarButtonDetector.h" />
+    <ClInclude Include="src\lock\taskbar\TaskbarButtonEnumeration.h" />
+    <ClInclude Include="src\lock\uia\UIAutomationHelper.h" />
+    <ClInclude Include="src\lock\uia\UIAutomationHelperImpl.h" />
+    <ClInclude Include="src\lock\uia\UIAutomationHelperTypes.h" />
+    <ClInclude Include="src\lock\ui\AppSelection.h" />
+    <ClInclude Include="src\lock\ui\ButtonPreview.h" />
+    <ClInclude Include="src\lock\ui\FrameSetWnd.h" />
+    <ClInclude Include="src\lock\ui\LockPreviewWnd.h" />
+    <ClInclude Include="src\lock\ui\PreviewStyle.h" />
+    <ClInclude Include="src\lock\WindowValidator.h" />
+    <ClInclude Include="src\lock\WinEventThread.h" />
+    <ClInclude Include="src\lock\WorkerThread.h" />
+    <ClInclude Include="src\log\Logger.h" />
+    <ClInclude Include="src\ren\Camera.h" />
+    <ClInclude Include="src\ren\DataType.h" />
+    <ClInclude Include="src\ren\Geometry.h" />
+    <ClInclude Include="src\ren\Material.h" />
+    <ClInclude Include="src\ren\MeshObject.h" />
+    <ClInclude Include="src\ren\PlanesGeometry.h" />
+    <ClInclude Include="src\ren\Polygon.h" />
+    <ClInclude Include="src\ren\Renderer.h" />
+    <ClInclude Include="src\res\AppVersion.h" />
+    <ClInclude Include="src\res\Resources.h" />
+    <ClInclude Include="src\sys\AppClock.h" />
+    <ClInclude Include="src\sys\AppTimer.h" />
+    <ClInclude Include="src\sys\BaseEvent.h" />
+    <ClInclude Include="src\sys\BinaryResource.h" />
+    <ClInclude Include="src\sys\Comparison.h" />
+    <ClInclude Include="src\sys\Executable.h" />
+    <ClInclude Include="src\sys\KeyFrames.h" />
+    <ClInclude Include="src\sys\MiniDump.h" />
+    <ClInclude Include="src\sys\Process.h" />
+    <ClInclude Include="src\sys\Rectangle.h" />
+    <ClInclude Include="src\sys\StringUtils.h" />
+    <ClInclude Include="src\sys\Time.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Language)'=='C++'">
+    <CAExcludePath>ext;$(BoostRootDir);$(CAExcludePath)</CAExcludePath>
+  </PropertyGroup>
+</Project>
