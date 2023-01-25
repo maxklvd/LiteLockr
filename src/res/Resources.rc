@@ -1,0 +1,264 @@
+#include "Resources.h"
+#include "AppVersion.h"
+#include <winres.h>
+#include <commctrl.h>
+
+IDI_APP_ICON                    ICON  "icon\\application\\app.ico"
+IDI_APP_ICON_64                 ICON  "icon\\application\\app64.ico"
+IDI_APP_ICON_96                 ICON  "icon\\application\\app96.ico"
+
+IDI_UNLOCKED__DARK_MODE	        ICON  "icon\\systray\\Unlocked--DarkMode.ico"
+IDI_LOCKED__DARK_MODE	        ICON  "icon\\systray\\Locked--DarkMode.ico"
+IDI_LOCKED_WARNING__DARK_MODE   ICON  "icon\\systray\\Locked-Warning--DarkMode.ico"
+
+IDI_UNLOCKED__LIGHT_MODE	    ICON  "icon\\systray\\Unlocked--LightMode.ico"
+IDI_LOCKED__LIGHT_MODE	        ICON  "icon\\systray\\Locked--LightMode.ico"
+IDI_LOCKED_WARNING__LIGHT_MODE  ICON  "icon\\systray\\Locked-Warning--LightMode.ico"
+
+IDI_APP_WARNING                 ICON  "icon\\warning\\Warning.ico"
+
+IDR_RT_MANIFEST RT_MANIFEST "app.manifest"
+
+//
+// Version
+//
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION APP_VERSION_MAIN, APP_VERSION_MAIN2, APP_VERSION_SUB, APP_VERSION_SUB2
+PRODUCTVERSION APP_VERSION_MAIN, APP_VERSION_MAIN2, APP_VERSION_SUB, APP_VERSION_SUB2
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+	FILEFLAGS 0x1L
+#else
+	FILEFLAGS 0x0L
+#endif
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Max Kolesnikov"
+            VALUE "FileDescription", "LiteLockr"
+			VALUE "FileVersion", APP_VERSION4_STR
+            VALUE "InternalName", "LiteLockr"
+            VALUE "LegalCopyright", "Copyright (C) 2022 Max Kolesnikov"
+            VALUE "OriginalFilename", "LiteLockr.exe"
+            VALUE "ProductName", "LiteLockr"
+			VALUE "ProductVersion", APP_VERSION4_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 280, 310
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings - LiteLockr"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL	    "",IDC_TAB_SETTINGS,"SysTabControl32",WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | TCS_FOCUSNEVER | WS_TABSTOP,4,4,272,284
+    CONTROL         "<a>Reset</a>",IDC_RESET,"SysLink",WS_TABSTOP,5,295,150,8
+    ICON            IDI_APP_WARNING,IDC_WARNING_ICON,263,4,16,16, SS_ICON|SS_REALSIZEIMAGE|SS_NOTIFY
+    DEFPUSHBUTTON   "OK",IDOK,172,292,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,225,292,50,14
+END
+
+IDD_PAGE_GENERAL DIALOGEX 0, 0, 272, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Lock / Unlock hot key",IDC_LOCK_UNLOCK_HOTKEY,8,7,240,8
+    CONTROL         "",IDC_HOTKEY,"msctls_hotkey32",WS_TABSTOP,8,19,130,14
+
+    LTEXT           "Don't lock the following apps",IDC_DONT_LOCK_APPS_LABEL,8,43,240,8
+    LISTBOX         IDC_DONT_LOCK_APPS,8,55,249,78,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_NOTIFY | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Check all",IDC_CHECK_ALL,8,138,60,14
+    CONTROL         "Add",IDC_ADD,"Button",BS_SPLITBUTTON | WS_TABSTOP,98,138,56,14
+    PUSHBUTTON      "Properties",IDC_PROPERTIES,156,138,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE,208,138,50,14
+
+    CONTROL         "Don't lock the current application",IDC_DONT_LOCK_CURRENT_APP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,163,239,8
+    LTEXT           "The active application will remain unlocked after you press",IDC_DONT_LOCK_CURRENT_APP_HINT_1,
+                    18,176,227,8
+    LTEXT           "the hot key",IDC_DONT_LOCK_CURRENT_APP_HINT_2,18,186,228,8
+    CONTROL         "Prevent your child from unlocking input devices",IDC_PREVENT_UNLOCKING_INPUT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,201,239,8
+    CONTROL         "Use a 4-digit PIN",IDC_USE_PIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,216,154,8
+    PUSHBUTTON      "Set up a PIN",IDC_SET_PIN,188,213,70,14
+    CONTROL         "Start with Windows",IDC_START_WITH_WINDOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,235,239,8
+    CONTROL         "Lock on startup",IDC_LOCK_ON_STARTUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,251,239,8
+END
+
+IDD_PAGE_ADVANCED DIALOGEX 0, 0, 272, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Show notifications",IDC_SHOW_NOTIFICATIONS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,8,240,8
+    CONTROL         "Hide tray notification icon when locked",IDC_HIDE_TRAY_ICON_WHEN_LOCKED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,24,240,8
+    CONTROL         "Unlock on Ctrl+Alt+Del",IDC_UNLOCK_ON_CTRL_ALT_DEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,40,240,8
+
+    CONTROL         "Delay before locking",IDC_DELAY_BEFORE_LOCKING_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,56,267,8       
+    EDITTEXT        IDC_DELAY_BEFORE_LOCKING,18,69,40,14,ES_NUMBER | ES_RIGHT | WS_TABSTOP  
+    CONTROL         "", IDC_DELAY_BEFORE_LOCKING_SPIN, UPDOWN_CLASS, UDS_ARROWKEYS | UDS_ARROWKEYS | UDS_ALIGNRIGHT
+                    | UDS_SETBUDDYINT, 18, 69, 11, 14                                       
+    LTEXT           "seconds",IDC_DELAY_BEFORE_LOCKING_UNIT,63,71,200,8   
+
+    CONTROL         "Automatically lock when idle",IDC_LOCK_WHEN_IDLE_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,88,267,8
+    EDITTEXT        IDC_LOCK_WHEN_IDLE,18,101,40,14,ES_NUMBER | ES_RIGHT | WS_TABSTOP
+    CONTROL         "", IDC_LOCK_WHEN_IDLE_SPIN, UPDOWN_CLASS, UDS_ARROWKEYS | UDS_ARROWKEYS | UDS_ALIGNRIGHT
+                    | UDS_SETBUDDYINT, 18, 101, 11, 14
+    LTEXT           "minutes",IDC_LOCK_WHEN_IDLE_UNIT,63,103,200,8
+
+    LTEXT           "Event interception",IDC_EVENT_INTERCEPTION_LABEL,8,120,240,8
+    COMBOBOX        IDC_EVENT_INTERCEPTION,8,133,129,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PAGE_LANGUAGE DIALOGEX 0, 0, 272, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Language",IDC_LANGUAGE_LABEL,8,8,271,8
+    COMBOBOX        IDC_LANGUAGE,8,20,129,14,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PIN DIALOGEX 0, 0, 171, 106
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set up a PIN - LiteLockr"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Enter PIN",IDC_ENTER_PIN_LABEL,8,8,69,8
+    EDITTEXT        IDC_NEW_PIN,8,20,75,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Confirm PIN",IDC_CONFIRM_PIN_LABEL,8,44,69,8
+    EDITTEXT        IDC_CONFIRM_PIN,8,56,75,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,33,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,88,84,50,14
+END
+
+IDD_PROPERTIES DIALOGEX 0, 0, 322, 158
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties - LiteLockr"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Taskbar button",IDC_TASKBAR_BUT_LABEL,8,8,230,8
+
+    CONTROL         "Find by AutomationId", IDC_FIND_BY_AUTOMATIONID_CHECK,
+                    "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 18,22,230,8
+
+    EDITTEXT        IDC_AUTOMATIONID_TEXT,28,36,233,14,ES_READONLY | ES_AUTOHSCROLL
+    PUSHBUTTON      "<",IDC_AUTOMATIONID_PREV,265,36,23,14
+    PUSHBUTTON      ">",IDC_AUTOMATIONID_NEXT,292,36,23,14
+
+    CONTROL         "Search for the executable name in AutomationId", IDC_SEARCH_EXECUTABLE_IN_AUTOMATIONID,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,56,260,8
+
+    CONTROL         "Find by name", IDC_FIND_BY_NAME_CHECK,
+                    "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 18,78,230,8
+    COMBOBOX	    IDC_NAME_COMBO,28,92,233,100, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<",IDC_NAME_PREV,265,92,23,14
+    PUSHBUTTON      ">",IDC_NAME_NEXT,292,92,23,14
+
+    PUSHBUTTON      "Check",IDC_CHECK,7,138,50,14
+    PUSHBUTTON      "OK",IDOK,212,138,50,14
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,265,138,50,14
+END
+
+//
+// About dialog
+//
+IDD_ABOUT DIALOGEX 0, 0, 200, 186
+STYLE DS_MODALFRAME | DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LiteLockr"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            IDI_APP_ICON_64,IDC_LOGO_ICON,0,20,64,64, SS_ICON|SS_REALSIZEIMAGE
+    CTEXT           "LiteLockr",IDC_NAME,5,75,190,12
+    CTEXT           "",IDC_VERSION,5,91,190,10
+    CONTROL         "<a>https://litelockr.org</a>",IDC_WEBSITE,"SysLink",0, 5,116,190,10
+    CONTROL         "<a>https://github.com/maxklvd/LiteLockr</a>",IDC_WEBSITE_GITHUB,"SysLink",0, 5,127,190,10
+    CONTROL         "<a>License Information</a>",IDC_LICENSE_INFORMATION,"SysLink",0, 5,149,190,10
+    CTEXT           "Copyright \xA9 2020-2022 Max Kolesnikov",IDC_COPYRIGHT,5,171,190,8
+END
+
+//
+// License dialog
+//
+IDD_LICENSE DIALOGEX 0, 0, 350, 250
+STYLE DS_MODALFRAME | DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LiteLockr License"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+EDITTEXT        IDC_LICENSE_TEXT,8,8,334,212,ES_READONLY| WS_VSCROLL | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL
+DEFPUSHBUTTON   "Close",IDCANCEL,292,228,50,14
+END
+
+//
+// Main window images
+//
+IDB_ABOUT		            RCDATA	"png\\About.png"
+IDB_BODY		            RCDATA	"png\\Body.png"
+IDB_CIRCLE		            RCDATA	"png\\Circle.png"
+IDB_CLOSE		            RCDATA	"png\\Close.png"
+IDB_MENU		            RCDATA	"png\\Menu.png"
+IDB_HELP		            RCDATA	"png\\Help.png"
+IDB_KEYBOARD_DISABLED	    RCDATA	"png\\KeyboardDisabled.png"
+IDB_KEYBOARD_ENABLED	    RCDATA	"png\\KeyboardEnabled.png"
+IDB_MOUSE_DISABLED	        RCDATA	"png\\MouseDisabled.png"
+IDB_MOUSE_ENABLED	        RCDATA	"png\\MouseEnabled.png"
+IDB_PROGRESS_BACKGROUND     RCDATA	"png\\ProgressBackground.png"
+IDB_PROGRESS_FULL	        RCDATA	"png\\ProgressFull.png"
+IDB_SETTINGS		        RCDATA	"png\\Settings.png"
+IDB_TITLE		            RCDATA	"png\\Title.png"
+IDB_LOCKED_AREA		        RCDATA	"png\\LockedArea.png"
+IDB_GRADIENT_DARK	        RCDATA	"png\\GradientDark.png"
+IDB_GRADIENT_TEXT	        RCDATA	"png\\GradientText.png"
+
+//
+// Lock images
+//
+IDB_LOCK_CANCEL		        RCDATA	"png\\LockCancel.png"
+IDB_LOCK_CLOSED		        RCDATA	"png\\LockClosed.png"
+IDB_LOCK_DISABLED	        RCDATA	"png\\LockDisabled.png"
+IDB_LOCK_OPEN		        RCDATA	"png\\LockOpen.png"
+
+//
+// Animations
+//
+IDB_ANIM_STARTUP	        RCDATA	"animation\\StartUp.png"
+IDB_ANIM_CANNOT_UNLOCK	    RCDATA	"animation\\CannotUnlock.png"
+IDB_ANIM_FINISH_LOCKING	    RCDATA	"animation\\FinishLocking.png"
+IDB_ANIM_START_LOCKING	    RCDATA	"animation\\StartLocking.png"
+IDB_ANIM_UNLOCK		        RCDATA	"animation\\Unlock.png"
+IDB_ANIM_OPEN_MENU	        RCDATA	"animation\\OpenMenu.png"
+IDB_ANIM_CLOSE_MENU	        RCDATA	"animation\\CloseMenu.png"
+
+//
+// Sounds
+//
+IDB_SND_START_LOCKING	    RCDATA	"sound\\StartLocking.wav"
+IDB_SND_FINISH_LOCKING	    RCDATA	"sound\\FinishLocking.wav"
+IDB_SND_UNLOCK	            RCDATA	"sound\\Unlock.wav"
+IDB_SND_CANCEL		        RCDATA	"sound\\Cancel.wav"
+IDB_SND_SHAKE		        RCDATA	"sound\\Shake.wav"
+IDB_SND_WRONG		        RCDATA	"sound\\Wrong.wav"
+
+//
+// Fonts
+//
+IDB_FONT_DIGITS		        RCDATA	"font\\Lato-Bold.ttf"
+IDB_FONT_SYMBOLS	        RCDATA	"font\\Symbols.ttf"
+
+//
+// Default LiteLockr.ini
+//
+IDB_LITELOCKR_INI		    RCDATA	"rel\\LiteLockr.ini"
+
+IDB_LICENSE 			    RCDATA	"rel\\LICENSE"
+ 

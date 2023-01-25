@@ -1,0 +1,3 @@
+U+E800 - outline dot
+U+E801 - dot
+U+E802 - lock
