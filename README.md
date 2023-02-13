@@ -1,6 +1,6 @@
 LiteLockr
 =========
-LiteLockr is an utility that allows you to restrict input devices, so that your child can only use the programs you want them to.
+Utility for locking the desktop.
 
 Example of using LiteLockr:
 
