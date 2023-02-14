@@ -4,9 +4,10 @@ Utility for locking the desktop.
 
 Example of using LiteLockr:
 
-1. Open your browser
-2. Make sure the browser window is active
-3. Press Ctrl+Alt+B
+1. Run LiteLockr.exe
+2. Open your browser
+3. Make sure the browser window is active
+4. Press Ctrl+Alt+B
 
 The keyboard and mouse will now only work in the browser and will be locked in all other software. The selected program retains its full functionality - you can minimize and maximize your browser, open and close tabs, go to full screen, and so on.
 
