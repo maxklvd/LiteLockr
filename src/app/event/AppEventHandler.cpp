@@ -126,7 +126,7 @@ void AppEventHandler::about(const AppEvent& /*event*/) {
 }
 
 void AppEventHandler::website(const AppEvent& /*event*/) {
-    ShellExecute(nullptr, L"open", L"https://litelockr.org", nullptr, nullptr, SW_SHOW);
+    ShellExecute(nullptr, L"open", L"https://github.com/maxklvd/LiteLockr", nullptr, nullptr, SW_SHOW);
 }
 
 void AppEventHandler::websiteGithub(const AppEvent& /*event*/) {

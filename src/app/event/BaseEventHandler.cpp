@@ -276,7 +276,7 @@ void BaseEventHandler::clickUnlock() {
 
 void BaseEventHandler::clickHelp() {
     using namespace std::literals::string_literals;
-    std::wstring helpLink = L"https://litelockr.org/help/?lang="s + appSettings().language.value();
+    std::wstring helpLink = L"https://github.com/maxklvd/LiteLockr";
     ShellExecute(nullptr, L"open", helpLink.c_str(), nullptr, nullptr, SW_SHOW);
 }
 

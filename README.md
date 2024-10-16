@@ -31,11 +31,6 @@ Installation
 LiteLockr is a portable application that does not require installation or additional .dll files.
 
 
-Documentation
--------------
-https://litelockr.org/help/
-
-
 License
 -------
 LiteLockr is available under the GNU General Public License version 3. See the LICENSE file for more info.

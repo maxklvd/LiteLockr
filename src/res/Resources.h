@@ -87,7 +87,6 @@
 #define IDC_NAME                            5101
 #define IDC_VERSION                         5102
 #define IDC_LOGO_ICON                       5104
-#define IDC_WEBSITE                         5105
 #define IDC_WEBSITE_GITHUB                  5106
 #define IDC_LICENSE_INFORMATION             5107
 #define IDC_LICENSE_TEXT                    5108

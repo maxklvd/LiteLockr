@@ -86,7 +86,6 @@ BOOL AboutDlg::onInitDialog() {
 
     SendDlgItemMessage(hWnd, IDC_NAME, WM_SETFONT, (WPARAM) hNameFont_, TRUE);
     SendDlgItemMessage(hWnd, IDC_VERSION, WM_SETFONT, (WPARAM) hFont_, TRUE);
-    SendDlgItemMessage(hWnd, IDC_WEBSITE, WM_SETFONT, (WPARAM) hFont_, TRUE);
     SendDlgItemMessage(hWnd, IDC_WEBSITE_GITHUB, WM_SETFONT, (WPARAM) hFont_, TRUE);
     SendDlgItemMessage(hWnd, IDC_LICENSE_INFORMATION, WM_SETFONT, (WPARAM) hFont_, TRUE);
     SendDlgItemMessage(hWnd, IDC_COPYRIGHT, WM_SETFONT, (WPARAM) hCopyrightFont_, TRUE);
@@ -101,7 +100,6 @@ BOOL AboutDlg::onInitDialog() {
     }
 
     centerLogoIcon();
-    centerSysLink(IDC_WEBSITE);
     centerSysLink(IDC_WEBSITE_GITHUB);
     centerSysLink(IDC_LICENSE_INFORMATION);
 
@@ -112,9 +110,6 @@ LRESULT AboutDlg::onSysLink(int /*wParam*/, LPNMHDR lParam, BOOL& /*bHandled*/) 
     auto pNMLink = reinterpret_cast<PNMLINK>(lParam);
     if (pNMLink) {
         switch (pNMLink->hdr.idFrom) {
-            case IDC_WEBSITE:
-                AppEvents::send(AppEvent::WEBSITE);
-                break;
             case IDC_WEBSITE_GITHUB:
                 AppEvents::send(AppEvent::WEBSITE_GITHUB);
                 break;

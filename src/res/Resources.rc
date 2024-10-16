@@ -181,7 +181,6 @@ BEGIN
     ICON            IDI_APP_ICON_64,IDC_LOGO_ICON,0,20,64,64, SS_ICON|SS_REALSIZEIMAGE
     CTEXT           "LiteLockr",IDC_NAME,5,75,190,12
     CTEXT           "",IDC_VERSION,5,91,190,10
-    CONTROL         "<a>https://litelockr.org</a>",IDC_WEBSITE,"SysLink",0, 5,116,190,10
     CONTROL         "<a>https://github.com/maxklvd/LiteLockr</a>",IDC_WEBSITE_GITHUB,"SysLink",0, 5,127,190,10
     CONTROL         "<a>License Information</a>",IDC_LICENSE_INFORMATION,"SysLink",0, 5,149,190,10
     CTEXT           "Copyright \xA9 2020-2022 Max Kolesnikov",IDC_COPYRIGHT,5,171,190,8
