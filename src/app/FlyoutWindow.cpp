@@ -200,13 +200,9 @@ void FlyoutWindow::showYourself() {
 void FlyoutWindow::startup() {
     setWindowPosition();
     model_.setVisible(true);
-    if (AppParameters::autoRun || AppParameters::hide) {
-        // skip the startup animation
-        show(false, {.animation = false});
-        doAfterAnimation(view_.resources().startupAnimation, false);
-    } else {
-        view_.runStartupAnimation();
-    }
+
+    show(false, {.animation = false});
+    doAfterAnimation(view_.resources().startupAnimation, false);
 }
 
 void FlyoutWindow::redraw() {
