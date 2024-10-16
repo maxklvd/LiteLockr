@@ -4,7 +4,7 @@
 #define APP_VERSION_MAIN  2
 #define APP_VERSION_MAIN2 0
 #define APP_VERSION_SUB   0
-#define APP_VERSION_SUB2  0
+#define APP_VERSION_SUB2  1
 
 #define TOSTRING2(arg) #arg
 #define TOSTRING(arg) TOSTRING2(arg)
