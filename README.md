@@ -23,7 +23,7 @@ Build requirements
 ------------------
 The prerequisites for building LiteLockr from source are:
 1. Microsoft Visual Studio 2022. Support for C++20 language standard is required
-2. Boost (header-only component). LiteLockr uses some utility classes from this C++ library.
+2. ~~Boost (header-only component). LiteLockr uses some utility classes from this C++ library.~~
 
 
 Installation
